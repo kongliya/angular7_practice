@@ -10,8 +10,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SharedModule} from './shared/shared.module';
 import {MenuItems} from './shared/menu-items/menu-items';
 import {BreadcrumbsComponent} from './layout/admin/breadcrumbs/breadcrumbs.component';
-
-
+import {CustomerManagementComponent} from './theme/customer-management/customer-management.component'
+import {Service} from './services/service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +23,13 @@ import {BreadcrumbsComponent} from './layout/admin/breadcrumbs/breadcrumbs.compo
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
   ],
-  providers: [MenuItems],
+  providers: [
+    MenuItems,
+    CustomerManagementComponent,
+    Service
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
