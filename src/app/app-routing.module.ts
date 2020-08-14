@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {AdminComponent} from './layout/admin/admin.component';
 import { ContantComponent } from './theme/contant/contant.component';
+import { ContantDetailComponent } from './theme/contant-detail/contant-detail.component';
+import { CustomerDetailComponent } from './theme/customer-detail/customer-detail.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,14 @@ const routes: Routes = [
       {
         path: 'contant',
         component: ContantComponent
+      },
+      {
+        path: 'contant-detail',
+        component: ContantDetailComponent
+      },
+      {
+        path: 'customer-detail',
+        component: CustomerDetailComponent
       }
     ]
   }

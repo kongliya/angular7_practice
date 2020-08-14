@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { Service } from '../../services/service'
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'customer-management',
@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class CustomerManagementComponent implements OnInit {
     constructor(
       private servers: Service,
+      private router: Router,
     ){ }
 
     data: Array<any> = [];
@@ -30,7 +31,9 @@ export class CustomerManagementComponent implements OnInit {
     console.log('edit')
   }
   preview() {
-    console.log('preview')
+    console.log('preview');
+    this.router.navigate(['/customer-detail']);
+
   }
   delete() {
     console.log('delete')

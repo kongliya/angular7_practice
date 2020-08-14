@@ -14,13 +14,17 @@ import {CustomerManagementComponent} from './theme/customer-management/customer-
 import {Service} from './services/service'
 import { HttpModule } from '@angular/http';
 import { ContantComponent } from './theme/contant/contant.component';
+import { ContantDetailComponent } from './theme/contant-detail/contant-detail.component';
+import { CustomerDetailComponent } from './theme/customer-detail/customer-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     AuthComponent,
     BreadcrumbsComponent,
-    ContantComponent
+    ContantComponent,
+    ContantDetailComponent,
+    CustomerDetailComponent
   ],
   imports: [
     BrowserModule,
