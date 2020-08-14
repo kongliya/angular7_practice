@@ -70,7 +70,6 @@
           "options": {
             "browserTarget": "gradient-able-v7.3.7:build"
           },
-          "proxyConfig": "proxy.conf.json",
           "configurations": {
             "production": {
               "browserTarget": "gradient-able-v7.3.7:build:production"

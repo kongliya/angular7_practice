@@ -12,6 +12,7 @@ import {MenuItems} from './shared/menu-items/menu-items';
 import {BreadcrumbsComponent} from './layout/admin/breadcrumbs/breadcrumbs.component';
 import {CustomerManagementComponent} from './theme/customer-management/customer-management.component'
 import {Service} from './services/service'
+import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import {Service} from './services/service'
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
+    HttpModule,
   ],
   providers: [
     MenuItems,

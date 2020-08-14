@@ -1,11 +1,9 @@
 {
-  "/apidata": {
-    "target": "http://localhost:4200/",
+  "/api3": {
+    "target": "http://dev.helloparkin.com:58090/",
     "secure": false,
     "logLevel": "debug",
-    "changeOrigin": true,
-    "pathRewrite": {
-      "^/apidata": ""
-    }
+    "changeOrigin": true
+   
   }
 }

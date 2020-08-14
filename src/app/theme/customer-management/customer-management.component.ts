@@ -15,7 +15,7 @@ export class CustomerManagementComponent implements OnInit {
 
   ngOnInit() {
     // http://dev.helloparkin.com:58090/api3/gy/order/getList
-    this.servers.getLists().then(res=>{
+    this.servers.getLists({}).then(res=>{
       console.log(res,"请求到的数据")
     })
      
