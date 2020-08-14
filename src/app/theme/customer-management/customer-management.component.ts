@@ -30,9 +30,9 @@ export class CustomerManagementComponent implements OnInit {
   edit() {
     console.log('edit')
   }
-  preview() {
+  preview(item) {
     console.log('preview');
-    this.router.navigate(['/customer-detail']);
+    this.router.navigate(['/customer-detail',item]);
 
   }
   delete() {
