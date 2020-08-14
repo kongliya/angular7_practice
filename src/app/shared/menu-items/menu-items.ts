@@ -47,6 +47,13 @@ const MENUITEMS = [
         name: '客户管理',
         type: 'link',
         icon: 'ti-layout-sidebar-left'
+      },
+      {
+        state: 'contant',
+        short_label: 'S',
+        name: '联系人管理',
+        type: 'link',
+        icon: 'ti-layout-sidebar-left'
       }
     ]
   }

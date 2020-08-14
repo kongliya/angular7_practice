@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {AdminComponent} from './layout/admin/admin.component';
+import { ContantComponent } from './theme/contant/contant.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: 'customer-management',
         loadChildren: './theme/customer-management/customer-management.module#CustomerManagementModule'
+      },
+      {
+        path: 'contant',
+        component: ContantComponent
       }
     ]
   }

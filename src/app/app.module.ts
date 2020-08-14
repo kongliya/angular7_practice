@@ -13,12 +13,14 @@ import {BreadcrumbsComponent} from './layout/admin/breadcrumbs/breadcrumbs.compo
 import {CustomerManagementComponent} from './theme/customer-management/customer-management.component'
 import {Service} from './services/service'
 import { HttpModule } from '@angular/http';
+import { ContantComponent } from './theme/contant/contant.component';
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     AuthComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    ContantComponent
   ],
   imports: [
     BrowserModule,
