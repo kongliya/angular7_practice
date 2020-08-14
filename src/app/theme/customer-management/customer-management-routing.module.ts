@@ -6,12 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: CustomerManagementComponent,
-    data: {
-      title: '客户管理',
-      icon: 'icon-layout-sidebar-left',
-      caption: 'lorem ipsum dolor sit amet, consectetur adipisicing elit - sample page',
-      status: true
-    }
+    // data: {
+    //   title: '客户管理',
+    //   icon: 'icon-layout-sidebar-left',
+    //   caption: 'lorem ipsum dolor sit amet, consectetur adipisicing elit - sample page',
+    //   status: true
+    // }
   }
 ];
 

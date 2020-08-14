@@ -10,19 +10,29 @@ import { HttpClient } from '@angular/common/http';
 export class CustomerManagementComponent implements OnInit {
     constructor(
       private servers: Service,
-    ){
-   }
+    ){ }
+
+    data: Array<any> = [];
 
   ngOnInit() {
     // http://dev.helloparkin.com:58090/api3/gy/order/getList
     this.servers.getLists({}).then(res=>{
-      console.log(res,"请求到的数据")
+      this.data = JSON.parse(res.text()).data;
+      console.log(this.data)
+
     })
      
-    //  HttpClient.get('/api/******', res => {
-     
-    //    console.log('data', res);
-    //  }, httpOptions.headers.append('Authorization', this.token));
   }
-
+  add() {
+    console.log('add')
+  }
+  edit() {
+    console.log('edit')
+  }
+  preview() {
+    console.log('preview')
+  }
+  delete() {
+    console.log('delete')
+  }
 }
