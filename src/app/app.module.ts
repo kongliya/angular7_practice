@@ -16,6 +16,7 @@ import { HttpModule } from '@angular/http';
 import { ContantComponent } from './theme/contant/contant.component';
 import { ContantDetailComponent } from './theme/contant-detail/contant-detail.component';
 import { CustomerDetailComponent } from './theme/customer-detail/customer-detail.component';
+import { LoginComponent } from './theme/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { CustomerDetailComponent } from './theme/customer-detail/customer-detail
     BreadcrumbsComponent,
     ContantComponent,
     ContantDetailComponent,
-    CustomerDetailComponent
+    CustomerDetailComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
