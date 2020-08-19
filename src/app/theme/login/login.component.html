@@ -1,18 +1,20 @@
 <div class="content">
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">用户名</span>
+  <div class="login">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">登陆用户</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
     </div>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-  <!-- [(ngModel)]="name" -->
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">密码</span>
+    <!-- [(ngModel)]="name" -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">用户密码</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
     </div>
-    <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+  
+    <button type="button" class="btn btn-primary">登陆</button>
   </div>
-
-  <button type="button" class="btn btn-primary">登陆</button>
 </div>
 
